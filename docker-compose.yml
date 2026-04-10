@@ -1,0 +1,1 @@
+version: '3.8'&#10;services:&#10;  app:&#10;    build: .&#10;    ports:&#10;      - "8000:8000"&#10;      - "8501:8501"&#10;    volumes:&#10;      - .:/app&#10;    environment:&#10;      - DATABASE_URL=sqlite:///./churn.db

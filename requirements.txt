@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+streamlit
+pandas
+scikit-learn
+sqlalchemy
+psycopg2
+passlib[bcrypt]
+python-jose
+python-dotenv
+joblib
+plotly
+requests
+httpx
+PyMySQL==1.1.1

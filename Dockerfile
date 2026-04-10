@@ -1,0 +1,1 @@
+FROM python:3.11-slim&#10;&#10;WORKDIR /app&#10;&#10;COPY requirements.txt .&#10;RUN pip install --no-cache-dir -r requirements.txt&#10;&#10;COPY . .&#10;&#10;# Expose ports&#10;EXPOSE 8000 8501&#10;&#10;# Run FastAPI with uvicorn&#10;CMD ["sh", "-c", "uvicorn api.main:app --host 0.0.0.0 --port 8000 & streamlit run app/app.py --server.port 8501 --server.address 0.0.0.0"]
